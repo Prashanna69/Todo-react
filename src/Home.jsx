@@ -18,6 +18,7 @@ export default function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const taskValue = task;
+    console.log(task);
     setTask("");
   };
   return (

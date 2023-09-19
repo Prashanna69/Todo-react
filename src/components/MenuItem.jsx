@@ -18,6 +18,8 @@ export default function MenuItems() {
 
   let colorScheme = "white";
 
+  console.log(value);
+
   if (value === "0") {
     colorScheme = "whiteAlpha";
   } else if (value === "1") {

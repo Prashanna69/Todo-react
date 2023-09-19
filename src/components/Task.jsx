@@ -8,6 +8,8 @@ import {
   Button,
   HStack,
   Spacer,
+  Flex,
+  Text,
 } from "@chakra-ui/react";
 
 export default function Task() {
@@ -21,11 +23,16 @@ export default function Task() {
               p="1rem 2rem"
               borderRadius="1rem 1rem 0rem 0rem"
             >
-              <Box as="span" textAlign="left" color="white" fontSize={"lg"}>
-                Task 1
-              </Box>
+              <Flex alignItems="center">
+                <Box as="span" textAlign="left" color="white" fontSize={"lg"}>
+                  <Text>Task 1</Text>
+                </Box>
+              </Flex>
               <Spacer />
-              <AccordionIcon color="white" />
+              <HStack>
+                <Text color="white">Priority: High</Text>
+                <AccordionIcon color="white" />
+              </HStack>
             </AccordionButton>
           </h2>
           <AccordionPanel
